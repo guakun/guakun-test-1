@@ -18,10 +18,11 @@
       --button-bg: white;
       --button-active-bg: #eee;
       --font-size: 14px;
-      --button-radius: 4px;
+      --border-radius: 4px;
       --color: #999;
       --border-color: #999;
-      --border-color-hover: #666;
+      /*--border-color-hover: #666;*/
+      --border-color-hover: red;
     }
 
     #app {
@@ -40,6 +41,11 @@
   <g-button icon="settings" :loading="loading1" @click="loading1 = !loading1"> 按钮 </g-button>
   <g-button icon="settings" icon-position="right" :loading="loading2"> 按钮 </g-button>
   <g-button> 按钮 </g-button>
+  <g-button-group>
+    <g-button icon="left" icon-position="left">上一页</g-button>
+    <g-button>page1</g-button>
+    <g-button icon="right" icon-position="right">下一页</g-button>
+  </g-button-group>
   <g-icon name="downloads"></g-icon>
 </div>
 
