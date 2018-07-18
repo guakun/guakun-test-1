@@ -36,8 +36,11 @@
 <div id="app">
   <div class="box">
     <g-input error="你说的也太多了"
+             v-model="message"
              @change="inputChange"
              value="薛:当我遁入黑暗之前... 想猥琐出场的时候... 天.. 还是亮的... 感谢每一位来的观众... 感恩... 愿此行我能尽量多去一些城市... 当面感谢... 你的聆听... "></g-input>
+    <p>{{ message }}</p>
+    <g-button @click="message+=1">+1</g-button>
   </div>
 
   <div class="box">

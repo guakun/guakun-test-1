@@ -78,10 +78,11 @@ describe('Input', () => {
         vm.$on(eventName, callback)
         // trigger onchange event
         let event = new Event(eventName)
+        Object.defineProperty(event, 'target', {value: {value: 'hi'}, enumerable: true})
         const inputElement = vm.$el.querySelector('input')
-        console.log(event)
+        console.log('event', event)
         inputElement.dispatchEvent(event)
-        expect(callback).to.have.been.calledWith(event)
+        expect(callback).to.have.been.calledWith('hi')
       })
     })
 
