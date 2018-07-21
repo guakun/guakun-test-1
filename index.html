@@ -29,11 +29,44 @@
     }
   </style>
   <style>
-    .box { margin: 20px 20px; }
+    .box {
+      margin: 20px 20px;
+    }
   </style>
+
 </head>
 <body>
 <div id="app">
+  <div class="box">
+    <g-row>
+      <g-col></g-col>
+      <g-col></g-col>
+    </g-row>
+
+    <g-row>
+      <g-col></g-col>
+      <g-col></g-col>
+      <g-col></g-col>
+    </g-row>
+
+    <g-row>
+      <g-col></g-col>
+      <g-col></g-col>
+      <g-col></g-col>
+      <g-col></g-col>
+    </g-row>
+
+    <g-row>
+      <g-col :span="2"></g-col>
+      <g-col :span="22"></g-col>
+    </g-row>
+
+    <g-row>
+      <g-col :span="4"></g-col>
+      <g-col :span="20"></g-col>
+    </g-row>
+  </div>
+
   <div class="box">
     <g-input error="你说的也太多了"
              v-model="message"
