@@ -23,11 +23,11 @@ new Vue({
     }
   },
   created() {
-    setTimeout(() => {
-      let event = new Event('change')
-      const inputElement = this.$el.querySelector('input')
-      inputElement.dispatchEvent(event)
-    }, 3000)
+    // setTimeout(() => {
+    //   let event = new Event('change')
+    //   const inputElement = this.$el.querySelector('input')
+    //   inputElement.dispatchEvent(event)
+    // }, 3000)
   },
   methods: {
     inputChange(event) {
