@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="zh-Hans">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>轱辘</title>
   <style>
@@ -11,6 +11,10 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    img {
+      max-width: 100%;
     }
 
     :root {
@@ -33,11 +37,58 @@
       margin: 20px 20px;
     }
   </style>
+  <style>
+    .demoBox {
+      min-height: 50px;
+      background: grey;
+      border: 1px solid red;
+    }
+
+    .logo-wrapper {
+      padding: 10px;
+    }
+  </style>
 
 </head>
+
 <body>
-<div id="app">
-  <div class="box" style="border: 1px solid black">
+  <div id="app">
+    <g-row class="topbar">
+      <g-col class="demoBox" span="9">
+        <g-row align="left">
+          <g-col>1</g-col>
+          <g-col>2</g-col>
+          <g-col>3</g-col>
+          <g-col>4</g-col>
+        </g-row>
+      </g-col>
+      <g-col class="demoBox" span="15">
+        <g-row align="right">
+          <g-col>1</g-col>
+          <g-col>2</g-col>
+          <g-col>3</g-col>
+          <g-col>4</g-col>
+          <g-col>5</g-col>
+          <g-col>6</g-col>
+          <g-col>7</g-col>
+        </g-row>
+      </g-col>
+    </g-row>
+
+    <g-row class="log-and-search-and-qrcode">
+      <g-col class="demoBox" span="4">
+        <g-row align="center">
+          <g-col>
+            <div class="logo-wrapper">
+              <img class="logo" src="https://img.alicdn.com/tfs/TB1_uT8a5ERMeJjSspiXXbZLFXa-143-59.png" alt="">
+            </div>
+          </g-col>
+        </g-row>
+      </g-col>
+      <g-col class="demoBox" span="14"></g-col>
+      <g-col class="demoBox" span="6"></g-col>
+    </g-row>
+    <!-- <div class="box" style="border: 1px solid black">
     <g-row gutter="20">
       <g-col>1</g-col>
       <g-col>2</g-col>
@@ -106,10 +157,11 @@
       <g-button>page1</g-button>
       <g-button icon="right" icon-position="right">下一页</g-button>
     </g-button-group>
+  </div> -->
   </div>
-</div>
 
-<script src="./src/app.js"></script>
-<!--<script src="//at.alicdn.com/t/font_738871_r80nenn5vwl.js"></script>-->
+  <script src="./src/app.js"></script>
+  <!--<script src="//at.alicdn.com/t/font_738871_r80nenn5vwl.js"></script>-->
 </body>
+
 </html>
