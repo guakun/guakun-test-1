@@ -80,47 +80,9 @@ describe('Input', () => {
         let event = new Event(eventName)
         Object.defineProperty(event, 'target', {value: {value: 'hi'}, enumerable: true})
         const inputElement = vm.$el.querySelector('input')
-        console.log('event', event)
         inputElement.dispatchEvent(event)
         expect(callback).to.have.been.calledWith('hi')
       })
     })
-
-    // it(' input 触发 input 事件', () => {
-    //   vm = new Constructor({}).$mount()
-    //   const callback = sinon.fake()
-    //   vm.$on('input', callback)
-    //   // trigger onchange event
-    //   let event = new Event('input')
-    //   const inputElement = vm.$el.querySelector('input')
-    //   console.log(event)
-    //   inputElement.dispatchEvent(event)
-    //   expect(callback).to.have.been.calledWith(event)
-    // })
-
-    // it(' input 触发 focus 事件', () => {
-    //   vm = new Constructor({}).$mount()
-    //   const callback = sinon.fake()
-    //   vm.$on('focus', callback)
-    //   // trigger onchange event
-    //   let event = new Event('focus')
-    //   const inputElement = vm.$el.querySelector('input')
-    //   console.log(event)
-    //   inputElement.dispatchEvent(event)
-    //   expect(callback).to.have.been.calledWith(event)
-    // })
-
-    // it(' input 触发 blur 事件', () => {
-    //   vm = new Constructor({}).$mount()
-    //   const callback = sinon.fake()
-    //   vm.$on('blur', callback)
-    //   // trigger onchange event
-    //   let event = new Event('blur')
-    //   const inputElement = vm.$el.querySelector('input')
-    //   console.log(event)
-    //   inputElement.dispatchEvent(event)
-    //   expect(callback).to.have.been.calledWith(event)
-    // })
-
   })
 })
