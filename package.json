@@ -3,6 +3,7 @@
   "version": "0.0.4",
   "description": "这是一个UI组件",
   "main": "dist/index.js",
+  "homepage": "https://guakun.github.io/guakun-test-1/dist",
   "scripts": {
     "start": "parcel index.html --no-cache",
     "dt1": "parcel watch test/* --no-cache",
@@ -24,7 +25,6 @@
   "bugs": {
     "url": "https://github.com/guakun/guakun-test-1/issues"
   },
-  "homepage": "https://github.com/guakun/guakun-test-1#readme",
   "dependencies": {
     "vue": "^2.5.16",
     "vue-hot-reload-api": "^2.3.0"

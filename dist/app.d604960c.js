@@ -103,7 +103,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({18:[function(require,module,exports) {
+})({6:[function(require,module,exports) {
 var global = arguments[3];
 /*!
  * Vue.js v2.5.16
@@ -10054,7 +10054,7 @@ module.exports = Vue;
     }
   }ready(appendSvg);
 })(window);
-},{}],53:[function(require,module,exports) {
+},{}],56:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -10084,7 +10084,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],51:[function(require,module,exports) {
+},{}],52:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -10115,7 +10115,7 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":53}],52:[function(require,module,exports) {
+},{"./bundle-url":56}],54:[function(require,module,exports) {
 var Vue // late bind
 var version
 var map = (window.__VUE_HOT_MAP__ = Object.create(null))
@@ -10357,7 +10357,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],8:[function(require,module,exports) {
+},{}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10423,7 +10423,7 @@ render._withStripped = true
       
       }
     })();
-},{"./svg":50,"_css_loader":51,"vue-hot-reload-api":52,"vue":18}],6:[function(require,module,exports) {
+},{"./svg":50,"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],8:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10540,7 +10540,7 @@ render._withStripped = true
       
       }
     })();
-},{"./icon":8,"_css_loader":51,"vue-hot-reload-api":52,"vue":18}],10:[function(require,module,exports) {
+},{"./icon":12,"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],10:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10632,7 +10632,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":51,"vue-hot-reload-api":52,"vue":18}],12:[function(require,module,exports) {
+},{"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],14:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10761,7 +10761,7 @@ render._withStripped = true
       
       }
     })();
-},{"./icon":8,"_css_loader":51,"vue-hot-reload-api":52,"vue":18}],14:[function(require,module,exports) {
+},{"./icon":12,"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],16:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10862,7 +10862,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":51,"vue-hot-reload-api":52,"vue":18}],16:[function(require,module,exports) {
+},{"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],18:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -10998,7 +10998,7 @@ render._withStripped = true
       
       }
     })();
-},{"_css_loader":51,"vue-hot-reload-api":52,"vue":18}],4:[function(require,module,exports) {
+},{"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],4:[function(require,module,exports) {
 'use strict';
 
 var _vue = require('vue');
@@ -11062,7 +11062,7 @@ new _vue2.default({
   }
 
 });
-},{"vue":18,"./button":6,"./icon":8,"./button-group":10,"./input":12,"./row":14,"./col":16}],54:[function(require,module,exports) {
+},{"vue":6,"./button":8,"./icon":12,"./button-group":10,"./input":14,"./row":16,"./col":18}],58:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -11091,7 +11091,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50409' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50760' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -11232,5 +11232,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.parcelRequire, id);
   });
 }
-},{}]},{},[54,4], null)
+},{}]},{},[58,4], null)
 //# sourceMappingURL=/app.d604960c.map
