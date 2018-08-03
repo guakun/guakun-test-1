@@ -10357,7 +10357,7 @@ exports.reload = tryWrap(function (id, options) {
   })
 })
 
-},{}],12:[function(require,module,exports) {
+},{}],10:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10540,7 +10540,7 @@ render._withStripped = true
       
       }
     })();
-},{"./icon":12,"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],10:[function(require,module,exports) {
+},{"./icon":10,"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],12:[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -10761,7 +10761,7 @@ render._withStripped = true
       
       }
     })();
-},{"./icon":12,"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],16:[function(require,module,exports) {
+},{"./icon":10,"_css_loader":52,"vue-hot-reload-api":54,"vue":6}],16:[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -11062,7 +11062,7 @@ new _vue2.default({
   }
 
 });
-},{"vue":6,"./button":8,"./icon":12,"./button-group":10,"./input":14,"./row":16,"./col":18}],58:[function(require,module,exports) {
+},{"vue":6,"./button":8,"./icon":10,"./button-group":12,"./input":14,"./row":16,"./col":18}],58:[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
@@ -11091,7 +11091,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '50760' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '55254' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
