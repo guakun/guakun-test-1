@@ -2,7 +2,7 @@
   <div class="layout"><slot></slot></div>
 </template>
 
-<style lang="sass" scoped>
-.layout{}
+<style lang="scss" scoped>
+.layout {border: 1px solid red;}
 </style>
 
