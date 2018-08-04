@@ -10,6 +10,8 @@ import Header from './header'
 import Sider from './sider'
 import Content from './content'
 import Footer from './footer'
+import Toaset from './toast'
+import plugin from './plugin'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -22,27 +24,15 @@ Vue.component('g-header', Header)
 Vue.component('g-sider', Sider)
 Vue.component('g-content', Content)
 Vue.component('g-footer', Footer)
+Vue.component('g-toast', Toaset)
+
+Vue.use(plugin)
 
 new Vue({
   el: '#app',
-  data() {
-    return {
-      loading1: true,
-      loading2: true,
-      message: 'hi'
-    }
-  },
-  created() {
-    // setTimeout(() => {
-    //   let event = new Event('change')
-    //   const inputElement = this.$el.querySelector('input')
-    //   inputElement.dispatchEvent(event)
-    // }, 3000)
-  },
   methods: {
-    inputChange(event) {
-      console.log('event', event)
+    showToast() {
+      this.$toast('当前功能不稳定，如果遇到 bug 请关闭该功能。')
     }
   }
-
 })
