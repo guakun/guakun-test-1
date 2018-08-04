@@ -38,23 +38,33 @@
     }
   </style>
   <style>
-    .demo {
-      background: #ddd;
-      border: 1px solid #666;
+    .sider {
+      background: #333;
+      width: 200px;
+    }
+    .header {
+      background: #999;
       height: 100px;
     }
+    .footer {
+      background: #ccc;
+      height: 50px;
+    }
   </style>
-<link rel="stylesheet" href="/app.d604960c.css"></head>
+<link rel="stylesheet" href="/app.f254705c.css"></head>
 
 <body>
   <div id="app">
-    <g-layout>
-      <g-header class="demo"></g-header>
-      <g-content class="demo"></g-content>
-      <g-footer class="demo"></g-footer>
+    <g-layout style="height: 100vh;">
+      <g-sider>Sider</g-sider>
+      <g-layout>
+        <g-header>Header</g-header>
+        <g-content>Content</g-content>
+        <g-footer>Footer</g-footer>
+      </g-layout>
     </g-layout>
   </div>
-  <script src="/app.d604960c.js"></script>
+  <script src="/app.f254705c.js"></script>
 </body>
 
 </html>
