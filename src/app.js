@@ -31,14 +31,18 @@ Vue.use(plugin)
 new Vue({
   el: '#app',
   created() {
-    this.$toast('我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>', {
+    this.$toast('你的智商需要充值!', {
+      // position: 'bottom',
+      position: 'middle',
       closeButton: {
-        text: '知道了',
+        text: '已充值',
         callback() {
-          console.log('用户说他知道了')
+          console.log('他说已经充值智商了')
         }
       },
       enableHtml: false,
+      autoClose: false,
+      autoCloseDelay: 3,
     })
   },
   methods: {
