@@ -58,6 +58,7 @@ export default {
     },
     close() {
       this.$el.remove();
+      this.$emit('close')
       this.$destroy();
     },
     onClickCLose() {
@@ -76,7 +77,16 @@ $toast-height: 40px;
 $toast-bg: rgba(0, 0, 0, 0.75);
 $border-radius: 4px;
 $box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes slide-down {
+  0% {opacity: 0; transform: translate(-50%, 100%);}
+  100% {opacity: 1; transform: translate(-50%, 0);}
+}
 .toast {
+  animation: slide-down 1s;
   font-size: $font-size; line-height: 1.8; min-height: $toast-height; position: fixed; 
   left: 50%; display: flex; align-items: center; background: $toast-bg;
   box-shadow: $box-shadow; border-radius: $border-radius; color: #fff; padding: 8px 16px;
