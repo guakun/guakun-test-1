@@ -30,9 +30,20 @@ Vue.use(plugin)
 
 new Vue({
   el: '#app',
+  created() {
+    this.$toast('我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>我是 <strong>加粗文字</strong> <a href="http://qq.com">qq.com</a>', {
+      closeButton: {
+        text: '知道了',
+        callback() {
+          console.log('用户说他知道了')
+        }
+      },
+      enableHtml: false,
+    })
+  },
   methods: {
     showToast() {
-      this.$toast('当前功能不稳定，如果遇到 bug 请关闭该功能。')
+      this.$toast('当前功能不稳定，如果遇到 bug 请关闭该功能。', {})
     }
   }
 })
