@@ -3,5 +3,7 @@
 </template>
 
 <style lang="scss" scoped>
-.content{}
+.content{
+  flex-grow: 1;
+}
 </style>
