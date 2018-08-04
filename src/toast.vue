@@ -87,18 +87,9 @@ $box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.5);
       border-left: 1px solid #666; margin-left: -16px;
     }
   }
-  &.position-top {
-    top: 0;
-    transform: translateX(-50%);
-  }
-  &.position-bottom {
-    bottom: 0;
-    transform: translateX(-50%);
-  }
-  &.position-middle {
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
+  &.position-top { top: 0; transform: translateX(-50%); }
+  &.position-bottom { bottom: 0; transform: translateX(-50%); }
+  &.position-middle { top: 50%; transform: translate(-50%, -50%); }
 }
 
 </style>

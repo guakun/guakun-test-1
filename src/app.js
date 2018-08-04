@@ -31,23 +31,22 @@ Vue.use(plugin)
 new Vue({
   el: '#app',
   created() {
-    this.$toast('你的智商需要充值!', {
-      // position: 'bottom',
-      position: 'middle',
-      closeButton: {
-        text: '已充值',
-        callback() {
-          console.log('他说已经充值智商了')
-        }
-      },
-      enableHtml: false,
-      autoClose: false,
-      autoCloseDelay: 3,
-    })
   },
   methods: {
     showToast() {
-      this.$toast('当前功能不稳定，如果遇到 bug 请关闭该功能。', {})
+      this.$toast(`你的智商需要充值! ${parseInt(Math.random() * 100)}`, {
+        position: 'bottom',
+        position: 'bottom',
+        closeButton: {
+          text: '已充值',
+          callback() {
+            console.log('他说已经充值智商了')
+          }
+        },
+        enableHtml: false,
+        autoClose: false,
+        autoCloseDelay: 3,
+      })
     }
   }
 })
