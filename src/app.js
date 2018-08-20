@@ -17,6 +17,7 @@ import TabHead from './tabs-head'
 import TabsBody from './tabs-body'
 import TabsItem from './tabs-item'
 import TabsPane from './tabs-pane'
+import Cascader from './cascader'
 
 Vue.component('g-button', Button)
 Vue.component('g-icon', Icon)
@@ -35,6 +36,7 @@ Vue.component('g-tabs-head', TabHead)
 Vue.component('g-tabs-body', TabsBody)
 Vue.component('g-tabs-item', TabsItem)
 Vue.component('g-tabs-pane', TabsPane)
+Vue.component('g-cascader', Cascader)
 
 Vue.use(plugin)
 
@@ -42,26 +44,70 @@ new Vue({
   el: '#app',
   data() {
     return {
-      selectedTab: 'sports'
+      source: [
+        {
+          name: '浙江',
+          children: [
+            { 
+              name: '杭州',
+              children: [
+                {name: '萧山区'},
+                {name: '古荡区'},
+                {name: '西湖区'},
+                {name: '滨江区'},
+              ]
+            },
+            { 
+              name: '宁波',
+              children: [
+                {name: '江东区'},
+                {name: '江北区'},
+                {name: '北仓区'},
+              ]
+            },
+            {
+              name: '温州',
+              children: [
+                {name: '市辖区'},
+                {name: '瑞安区'},
+                {name: '龙湾区'},
+              ]
+            },
+          ]
+        },
+        {
+          name: '山东',
+          children: [
+            {
+              name: '济南',
+              children: [
+                {name: '历下区'},
+                {name: '历城区'},
+                {name: '高新区'},
+                {name: '天桥区'},
+              ]
+            },
+            {
+              name: '青岛',
+              children: [
+                {name: '市南区'},
+                {name: '黄岛区'},
+                {name: '四方区'},
+              ]
+            },
+          ]
+        },
+        {
+          name: '北京',
+          children: [
+            {name: '五道口'},
+            {name: '大兴'},
+          ]
+        }
+      ]
     }
   },
   created() {
   },
-  methods: {
-    showToast() {
-      this.$toast(`你的智商需要充值! ${parseInt(Math.random() * 100)}`, {
-        position: 'bottom',
-        position: 'bottom',
-        closeButton: {
-          text: '已充值',
-          callback() {
-            console.log('他说已经充值智商了')
-          }
-        },
-        enableHtml: false,
-        autoClose: false,
-        autoCloseDelay: 3,
-      })
-    }
-  }
+  methods: {}
 })

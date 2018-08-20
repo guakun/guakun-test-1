@@ -55,9 +55,14 @@
 
 <body>
   <div id="app">
-    <g-tabs :selected="selectedTab" @update:selected="sleectedTab=$event">
+    <p>111111111111111111111111</p>
+    <g-cascader :source=source>
+    </g-cascader>
+    <p>222222222222222222222222222222</p>
+    <!-- <g-button>设置</g-button> -->
+    <!-- <g-tabs :selected="selectedTab" @update:selected="sleectedTab=$event"> -->
+      <!-- <g-tabs :selected.sync="selectedTab" >
       <g-tabs-head >
-      <!-- <g-tabs-head :selected.sync="selectedTab" > -->
         <template slot="actions">
           <g-button>设置</g-button>
         </template>
@@ -72,7 +77,7 @@
         <g-tabs-pane name="finance">2</g-tabs-pane>
         <g-tabs-pane name="sports">3</g-tabs-pane>
       </g-tabs-body>
-    </g-tabs>
+    </g-tabs> -->
   </div>
   <script src="./src/app.js"></script>
 </body>
